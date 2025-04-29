@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.NotificationActivity"
+    android:background="@drawable/background_gradient"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminders are currently: ..."
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/buttonEnable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Reminders"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/buttonDisable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Disable Reminders"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/buttonTestReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test Reminder"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/buttonBookingConfirmed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Booking Confirmed"
+            app:layout_constraintTop_toBottomOf="@id/buttonDisable"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/buttonReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Schedule Reminder"
+            app:layout_constraintTop_toBottomOf="@id/buttonBookingConfirmed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/buttonRescheduled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Rescheduled"
+            app:layout_constraintTop_toBottomOf="@id/buttonReminder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/buttonCanceled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Canceled"
+            app:layout_constraintTop_toBottomOf="@id/buttonRescheduled"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/buttonViewHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Notification History"
+            app:layout_constraintTop_toBottomOf="@id/buttonCanceled"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

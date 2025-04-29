@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient"
+    android:layout_marginBottom="12dp"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/txtPatientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient ID:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"/>
+
+
+    <TextView
+        android:id="@+id/txtAppointmentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time:"
+        android:textSize="15sp"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/txtAppointmentStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Pending"
+        android:textColor="#888888"
+        android:textSize="14sp"
+        android:layout_marginBottom="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btnMarkComplete"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Mark Completed"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>

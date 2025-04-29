@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context="com.example.myapplication.BookAppointmentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Department Dropdown -->
+        <TextView
+            android:text="Select Department"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/spinnerDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Doctor Dropdown -->
+        <TextView
+            android:text="Select Doctor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/spinnerDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Date Picker -->
+        <Button
+            android:id="@+id/btnPickDate"
+            android:text="Pick Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtSelectedDate"
+            android:text="No date selected"
+            android:textSize="15sp"
+            android:layout_marginVertical="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Available Slots -->
+        <TextView
+            android:text="Available Time Slots"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/listViewSlots"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:divider="#CCCCCC"
+            android:dividerHeight="1dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Confirm Button -->
+        <Button
+            android:id="@+id/btnConfirmAppointment"
+            android:text="Confirm Appointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+</ScrollView>

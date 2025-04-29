@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_set_availability"
+        android:title="Set Availability"/>
+
+    <item
+        android:id="@+id/menu_view_availability"
+        android:title="View My Availability" />
+
+    <item android:id="@+id/menu_logout"
+        android:title="Logout"/>
+</menu>

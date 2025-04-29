@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter your details to register on the app"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="25dp"
+            android:textAlignment="center"/>
+
+        <!-- Passport -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Passport Number"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/inputPassport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your passport number"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Codice Fiscale -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Codice Fiscale"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/inputCodiceFiscale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your codice fiscale"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Password -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:drawableEnd="@drawable/ic_eye_off"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Confirm Password -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/inputConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:drawableEnd="@drawable/ic_eye_off"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="25dp"/>
+
+        <!-- Submit -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:background="@drawable/border"
+            android:textColor="#000000"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp"/>
+    </LinearLayout>
+</ScrollView>

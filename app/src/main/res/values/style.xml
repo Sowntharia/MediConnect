@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- Define the custom theme -->
+    <style name="Themes.MyApplication" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary app colors -->
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryVariant">#3700B3</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Status bar and navigation -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">?attr/colorPrimary</item>
+
+        <!-- Customizing toolbar -->
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowNoTitle">false</item>
+    </style>
+
+
+
+</resources>

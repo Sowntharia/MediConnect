@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    tools:context="com.example.myapplication.DoctorAvailabilityActivity">
+
+    <TextView
+        android:id="@+id/titleAvailability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Your Availability"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="12dp" />
+
+    <TextView
+        android:id="@+id/txtLatestSlot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latest Slot:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="12dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtNoSlots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No availability slots found."
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAvailability"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

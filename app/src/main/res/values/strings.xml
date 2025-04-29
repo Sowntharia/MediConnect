@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <!-- Login / User Info -->
+    <string name="user_not_logged_in">User not logged in</string>
+    <string name="welcome_user">Welcome, %1$s</string>
+
+    <!-- Appointment Labels -->
+    <string name="select_all_fields_warning">Please select department, doctor, date, and slot</string>
+    <string name="appointment_booked_success">Appointment booked!</string>
+    <string name="failed_fetch_patient">Failed to fetch patient name</string>
+    <string name="appointment_canceled">Appointment canceled.</string>
+    <string name="appointment_rescheduled">Appointment Rescheduled</string>
+    <string name="loading_appointment">Loading appointment...</string>
+
+    <!-- Appointment Details Format -->
+    <string name="appointment_details">Doctor: %1$s\nDepartment: %2$s\nDate and Time: %3$s\nStatus: %4$s</string>
+    <string name="patient_name_label">Patient: %1$s</string>
+    <string name="appointment_time_label">Time: %1$s</string>
+    <string name="appointment_status_label">Status: %1$s</string>
+    <string name="status_completed">Completed</string>
+    <string name="status_pending">Pending</string>
+    <string name="status_canceled">Canceled</string>
+
+    <!-- Sections -->
+    <string name="upcoming_header">Upcoming Appointments</string>
+    <string name="past_header">Past Appointments</string>
+    <string name="no_upcoming">No upcoming appointments.</string>
+    <string name="no_past">No past appointments.</string>
+
+    <!-- Buttons -->
+    <string name="cancel_appointment">Cancel Appointment</string>
+    <string name="mark_completed">Mark as Completed</string>
+    <string name="mark_canceled">Mark as Canceled</string>
+    <string name="reschedule">Reschedule</string>
+
+    <!-- Reschedule -->
+    <string name="rescheduling_details">Rescheduling:\nDoctor: %1$s\nDepartment: %2$s\nDate and Time: %3$s</string>
+    <string name="reschedule_confirm_message">Reschedule to:\n%1$s%2$s</string>
+    <string name="confirm_reschedule_title">Confirm Reschedule</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="default_slot_time">Date and Time Here</string>
+    <string name="content_description_edit_slot">Edit Slot</string>
+    <string name="content_description_delete_slot">Delete Slot</string>
+
+    <string name="edit_availability_title">Edit Availability</string>
+    <string name="select_date_hint">Select Date</string>
+    <string name="select_time_hint">Select Time</string>
+    <string name="update_availability_button">Update Availability</string>
+
+    <string name="latest_slot">Latest Slot: %1$s</string>
+
+        <!-- Your existing strings above -->
+
+        <!-- Add these -->
+        <string name="error_select_date_time">Please select date and time.</string>
+        <string name="availability_updated">Availability updated!</string>
+        <string name="error_update">Failed to update: </string>
+        <string name="error_delete">Failed to delete old slot: </string>
+
+    <string name="content_description_select_date">Select Date</string>
+    <string name="content_description_select_time">Select Time</string>
+
+</resources>

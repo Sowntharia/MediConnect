@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context="com.example.myapplication.RescheduleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:text="Reschedule Appointment"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/currentAppointment"
+            android:text="Current Appointment: Loading..."
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/selectDateButton"
+            android:text="Pick a New Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Loading Spinner -->
+        <ProgressBar
+            android:id="@+id/slotLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Filter Group -->
+        <RadioGroup
+            android:id="@+id/filterGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:id="@+id/filterAll"
+                android:text="All"
+                android:checked="true"
+                android:layout_marginEnd="10dp" />
+
+            <RadioButton
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:id="@+id/filterMorning"
+                android:text="Morning"
+                android:layout_marginEnd="10dp" />
+
+            <RadioButton
+                android:id="@+id/filterEvening"
+                android:text="Evening"
+                 android:layout_height="match_parent"
+                 android:layout_width="wrap_content"/>
+        </RadioGroup>
+
+        <!-- GridView of Slots -->
+        <GridView
+            android:id="@+id/gridViewSlots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:layout_marginBottom="20dp" />
+
+
+        <!-- Optional Reason -->
+        <EditText
+            android:id="@+id/reasonInput"
+            android:hint="Reason for rescheduling (optional)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:layout_marginBottom="24dp"
+            android:inputType="textMultiLine"
+            android:minLines="3" />
+
+        <!-- Reschedule Button -->
+        <Button
+            android:id="@+id/rescheduleButton"
+            android:text="Reschedule Now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
